@@ -41,8 +41,8 @@ FIM
 ```
 Obs: as variáveis podem ser misturadas dentro do array/lista. Pode ser misturada com textos e números ou até mesmo criar uma lista dentro de uma lista. 
 ## Operadores Aritméticos e Comparadores
-- Variáveis Number
- * Operadores aritméticos: soma (+), subtração (-), multiplicação (*) e divisão (/).
+ - Variáveis Number
+    - Operadores aritméticos: soma (+), subtração (-), multiplicação (*) e divisão (/).
 - **Exemplo:**
 ```
 INICIO
