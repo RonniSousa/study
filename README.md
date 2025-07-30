@@ -184,7 +184,11 @@ False
 True
 ```
 ## Operadores Lógicos
-- Operador "E": representado por (&&). É o operador lógico de inclusão. Esse operador só devolve "true" quando todos os booleanos envolvidos forem "true".
+- Operador "E": representado por (&&). É o operador lógico de inclusão.<br>
+Esse operador só devolve "true" quando todos os booleanos envolvidos forem "true".
+- Operador "OU": representado por (||). Operador lógico de "alternativa".<br>
+Só devolve "false" quando todos seus booleanos são "false".<br>
+Se pelo menos um for "true", então o retorno é "true". 
 - **Exemplo de como usar o operador "E":**
 ```
 INICIO
@@ -205,3 +209,31 @@ False
 False && true
 False
 ```
+- **Exemplo de como usar o operador "OU":**
+```
+INICIO
+IMPRIMA true || true 
+IMPRIMA true || false
+IMPRIMA false || true
+IMPRIMA true || false || true
+
+FIM
+```
+&nbsp;&nbsp;&nbsp;&nbsp;**Resultado do exemplo acima:**
+```
+True
+True
+True
+True || true 
+True
+```
+```
+Tabela Verdade
+|     A     |     B    |  A && B  |   A || B  |
+|-----------|----------|----------|-----------|
+| ✅ true  | ✅ true  | ✅ true  | ✅ true  |
+| ✅ true  | ❌ false | ❌ false | ✅ true  |
+| ❌ false | ✅ true  | ❌ false | ✅ true  |
+| ❌ false | ❌ false | ❌ false | ❌ false |
+```
+
