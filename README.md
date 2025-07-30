@@ -54,7 +54,10 @@ Obs: as variáveis podem ser misturadas dentro do array/lista. Pode ser misturad
     *Obs: na programação o exclamação (!) significa **NÃO**.*
     - Maior que: representado por (>). Só funciona com números.<br>
     **True** se o primeiro número for maior que o segundo.<br>
-    **False** se o primeiro número não for maior que o segundo.  
+    **False** se o primeiro número não for maior que o segundo.
+    - Menor que: representado por (<) Só funciona com números.<br>
+    **True** se o primeiro número for menor que o segundo.<br>
+    **False** se o primeiro número não for menor que o segundo.
 - **Exemplo de como usar soma e subtração:**
 ```
 INICIO
@@ -128,7 +131,7 @@ False
 False
 ```
 - **Exemplo de como usar o comparador de desigualdade:**
-- ```
+```
 INICIO
 IMPRIMA 1 !== 1
 IMPRIMA 1 !== 2
@@ -142,5 +145,41 @@ FIM
 False
 True
 True
+True
+```
+- **Exemplo de como usar o comparador maior que:**
+```
+INICIO
+IMPRIMA 1 > 2
+IMPRIMA 2 > 1
+IMPRIMA 1 > 1
+IMPRIMA 1 >= 1
+IMPRIMA 1 > 2 > 3
+
+FIM
+```
+&nbsp;&nbsp;&nbsp;&nbsp;**Resultado do exemplo acima:**
+```
+False
+True
+False
+True
+ERROR: o computador não consegue fazer mais de uma comparação de uma só vez.
+```
+- **Exemplo de como usar o comparador menor que:**
+```
+INICIO
+IMPRIMA 1 < 2
+IMPRIMA 2 < 1
+IMPRIMA 1 < 1
+IMPRIMA 1 <= 1
+
+FIM
+```
+&nbsp;&nbsp;&nbsp;&nbsp;**Resultado do exemplo acima:**
+```
+True
+False
+False
 True
 ```
