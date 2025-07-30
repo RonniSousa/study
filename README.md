@@ -43,7 +43,12 @@ Obs: as variáveis podem ser misturadas dentro do array/lista. Pode ser misturad
 ## Operadores Aritméticos e Comparadores
  - Variáveis Number
     - Operadores aritméticos: soma (+), subtração (-), multiplicação (*) e divisão (/).
-- **Exemplo:**
+    - Resto da divisão: representado por (%). Há casos em que dividir um número pelo outro não da o resultado redondo, por exemplo: 20 dividido por 3 resulta em 6 com sobra igual a 2, essa sobra é o resto da divisão. Esse operador é utilizado para verificar a paridade de um número, ou seja, para ver se o número é par ou ímpar.
+ - Comparadores: são operadores que permitem comparar dois valores. O resultado sempre será um valor booleano (True or False).
+    - Igualdade: representado por (===). Esse operador verifica se tanto o valor quanto o tipo de variáveis são iguais.<br>
+    Se sim, True<br>
+    Se não, False
+- **Exemplo de como usar soma e subtração:**
 ```
 INICIO
 VARIAVEIS
@@ -68,6 +73,33 @@ total <- precoDoMelao + precoDaUva
 pagamentoEmDinheiro <- 20
 
 troco <- pagamentoEmDinheiro - total
+
+FIM
+```
+- **Exemplo de como usar multiplicação e divisão:**
+```
+INICIO
+VARIAVEIS
+  caixasDeBombom, bombomPorCaixa, pessoas, totalDeBombons, bombonsPorPessoa
+
+caixasDeBombom <- 5
+bombonsPorCaixa <- 12
+pessoa <- 6
+
+totalDeBombons <- caixasDeBombom * bombonsPorCaixa
+bombonsPorPessoa <- totalDeBombons / pessoas
+
+FIM
+```
+- **Exemplo de como usar o resto da divisão:**
+```
+INICIO
+VARIAVEIS
+  dividando, divisor, resto
+
+dividendo <- 20
+divisor <- 3
+resto <- 20 % 3
 
 FIM
 ```
