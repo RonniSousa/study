@@ -236,4 +236,40 @@ Tabela Verdade
 | ❌ false | ✅ true  | ❌ false | ✅ true  |
 | ❌ false | ❌ false | ❌ false | ❌ false |
 ```
+### Exercício 1
+```
+INICIO
 
+IMPRIMA false || true || false
+
+FIM
+```
+<details>
+  <summary>Clique aqui para mostrar o resultado</summary>
+(False || true) || false<br>
+ True || false<br>
+ True
+</details>
+
+### Exercício 2
+```
+INICIO
+
+IMPRIMA (false || true) && !true
+
+FIM
+```
+<details>
+  <summary>Clique aqui para mostrar o resultado</summary>
+ 
+Primeiro resolve a questão entre parênteses:<br>
+**True**<br>
+ **True && !true**<br>
+ 
+Agora resolve o comparador (!):<br>
+**False**<br>
+**True && false**<br>
+
+Resultado final:<br>
+**False**
+</details>
