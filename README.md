@@ -45,9 +45,16 @@ Obs: as variáveis podem ser misturadas dentro do array/lista. Pode ser misturad
     - Operadores aritméticos: soma (+), subtração (-), multiplicação (*) e divisão (/).
     - Resto da divisão: representado por (%). Há casos em que dividir um número pelo outro não da o resultado redondo, por exemplo: 20 dividido por 3 resulta em 6 com sobra igual a 2, essa sobra é o resto da divisão. Esse operador é utilizado para verificar a paridade de um número, ou seja, para ver se o número é par ou ímpar.
  - Comparadores: são operadores que permitem comparar dois valores. O resultado sempre será um valor booleano (True or False).
-    - Igualdade: representado por (===). Esse operador verifica se tanto o valor quanto o tipo de variáveis são iguais.<br>
+    - Igualdade: representado por (===). Esse operador verifica se tanto o valor quanto o tipo de variáveis são iguais e também pode ser utilizado para comparar o tipo texto.<br>
     Se sim, True<br>
     Se não, False
+    - Desigualdade: representado por (!==). Esse operador verifica se tanto o valor quanto o tipo de variáveis são desiguais.<br>
+    Se sim, True<br>
+    Se não, False<br>
+    *Obs: na programação o exclamação (!) significa **NÃO**.*
+    - Maior que: representado por (>). Só funciona com números.<br>
+    **True** se o primeiro número for maior que o segundo.<br>
+    **False** se o primeiro número não for maior que o segundo.  
 - **Exemplo de como usar soma e subtração:**
 ```
 INICIO
@@ -102,4 +109,38 @@ divisor <- 3
 resto <- 20 % 3
 
 FIM
+```
+- **Exemplo de como usar o comparador de igualdade:**
+```
+INICIO
+IMPRIMA 1 === 1
+IMPRIMA 1 === 2
+IMPRIMA "João" === "Maria"
+IMPRIMA "1" === 1
+
+FIM
+```
+&nbsp;&nbsp;&nbsp;&nbsp;**Resultado do exemplo acima:**
+```
+True
+False
+False
+False
+```
+- **Exemplo de como usar o comparador de desigualdade:**
+- ```
+INICIO
+IMPRIMA 1 !== 1
+IMPRIMA 1 !== 2
+IMPRIMA "João" !== "Maria"
+IMPRIMA "1" !== 1
+
+FIM
+```
+&nbsp;&nbsp;&nbsp;&nbsp;**Resultado do exemplo acima:**
+```
+False
+True
+True
+True
 ```
