@@ -183,3 +183,25 @@ False
 False
 True
 ```
+## Operadores Lógicos
+- Operador "E": representado por (&&). É o operador lógico de inclusão. Esse operador só devolve "true" quando todos os booleanos envolvidos forem "true".
+- **Exemplo de como usar o operador "E":**
+```
+INICIO
+IMPRIMA true && true 
+IMPRIMA true && false
+IMPRIMA false && true
+IMPRIMA true && false && true
+
+FIM
+```
+&nbsp;&nbsp;&nbsp;&nbsp;*Obs: nesse quarto caso, o computador vai comparar 2 booleanos de cada vez. A primeira operação é true && false = false. A segunda operação é o resultado da primeira mais true, ou seja, false && true = false*<br>
+&nbsp;&nbsp;&nbsp;&nbsp;**Resultado do exemplo acima:**
+```
+True
+False
+False
+
+False && true
+False
+```
