@@ -456,3 +456,29 @@ REMOVA(listaDeAlunos, 4)
 
 FIM
 ```
+## Estrutura Condicionais
+Será utilizado fluxograma que são representados por quadrado e losango. Cada passo será representado por quadrado e cada tomada de decisão será representado por losango. 
+- Condicional Simples
+- Condicional Composta
+- Condicional Aninhada
+- Escolha Caso
+- **Exemplificação de fluxograma com base na nota da prova de um aluno:** <br>
+[Clique aqui para visualizar o fluxograma](https://ibb.co/C3vMrRkX)
+
+```
+INICIO
+VARIAVEIS
+  notaFinal
+
+notaFinal <- Escreva "Qual foi a sua nota?"
+
+SE notaFinal >= 5 ENTAO
+  IMPRIMA "Foi aprovado, parabens!"
+SENAO
+  IMPRIMA "Reprovado!"
+FIMSE
+
+FIM
+```
+*Obs: o comando FIMSE é utilizado para determinar o fim do bloco "SE".*
+*Obs²: IDENTAÇÃO - Algumas linguagens não funcionam sem a identação adequada! É importante na organização do seu código.*
