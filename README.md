@@ -363,3 +363,53 @@ Resolva a questão entre parênteses "externo":<br>
 Resultado final:<br>
 **False**
 </details>
+
+## Operações com Strings e Arrays
+- Concatenação: Operador de adição aplicado a Strings. Diferentes pedaços de texto se juntam.
+```
+INICIO
+VARIAVEIS
+  nomeDoUsuario, mensagem
+
+nomeDoUsuario <- Escreva "Digite seu nome"
+
+mensagem <- "Olá, " + momeDoUsuario + ", como você está?"
+
+IMPRIMA mensagem
+
+FIM
+```
+Você pode usar operações de adição para juntar pedaços de texto que estão em strings e pedaços de texto que estão armazenados em variáveis. 
+- Acessando elemento de um Array: definir qual elemento se quer acessar e identificar ele pela sua posição na lista. É conhecido como **índice**.
+  - Na programação geralmente utiliza-se a seguinte simbologia: nomeDoArray[indice]. *Obs: vale incluir que, na programação a contagem de números começa a partir do ZERO*<br>
+  Exemplo: listaDeAlunos <- ["Alex", "Alice", "Bruna", "Caio"]<br>
+  Alex = 0, Alice = 1, Bruna = 2, Caio = 3.
+```
+INICIO
+VARIAVEIS
+  listaDeAlunos
+
+listaDeAlunos <- ["Alex", "Alice", "Bruna", "Caio", "Eduador", "Eloisa"]
+
+Para imiprimir o primeiro elemento ("Alex"), segue o exemplo abaixo::
+
+IMPRIMA listaDeAluno[0]
+
+Para atribuir um novo valor a um determinado elemento, segue o exemplo abaixo:
+
+listaDeAluno[4] <- "Davi"
+
+FIM
+```
+- Abaixo vamos aprender como verifica a quantidade de elementos dentro do Array. Para isso, utiliza-se a palavra COMPRIMENTO seguido de "listaDeAlunos" entre parênteses.
+```
+INICIO
+VARIAVEIS
+  listaDeAlunos, quantidadeDeAlunos
+
+listaDeAlunos <- ["Alex", "Alice", "Bruna", "Caio", "Eduador", "Eloisa"]
+
+quantidadeDeAlunos <- COMPRIMENTO(listaDeAlunos)
+
+FIM
+```
