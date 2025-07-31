@@ -227,8 +227,8 @@ True
 True || true 
 True
 ```
+## Tabela Verdade
 ```
-Tabela Verdade
 |     A     |     B    |  A && B  |   A || B  |
 |-----------|----------|----------|-----------|
 | ✅ true  | ✅ true  | ✅ true  | ✅ true  |
@@ -236,6 +236,14 @@ Tabela Verdade
 | ❌ false | ✅ true  | ❌ false | ✅ true  |
 | ❌ false | ❌ false | ❌ false | ❌ false |
 ```
+
+## Teste de Bullet Lista:<br>
+A ordem da expressão lógica que os operadores serão resolvidos pelo computador e a ordem que devemos pensar
+  - Prioridades:
+    - Parênteses
+    - Operadores Aritiméticos
+    - Comparadores
+    - Operadores Lógicos: "E" tem prioridade maior que "OU"
 ### Exercício 1
 ```
 INICIO
@@ -246,9 +254,15 @@ FIM
 ```
 <details>
   <summary>Clique aqui para mostrar o resultado</summary>
-(False || true) || false<br>
- True || false<br>
- True
+ 
+Para resolver essa operação de dois em dois, separe por parênteses:<br>
+**(False || true) || false**<br>
+
+Agora resolva a questão entre parênteses:<br>
+**True || false**<br>
+
+Resultado:<br>
+**True**
 </details>
 
 ### Exercício 2
@@ -262,13 +276,89 @@ FIM
 <details>
   <summary>Clique aqui para mostrar o resultado</summary>
  
-Primeiro resolve a questão entre parênteses:<br>
-**True**<br>
- **True && !true**<br>
+Primeiro resolva a questão entre parênteses:<br>
+**True && !true**<br>
  
-Agora resolve o comparador (!):<br>
-**False**<br>
+Agora resolva o operador (!):<br>
 **True && false**<br>
+
+Resultado final:<br>
+**False**
+</details>
+
+### Exercício 3
+```
+INICIO
+VARIAVEIS
+  var1, var2, var3
+
+var1 <- true
+var2 <- false
+var3 <- !var2
+
+IMPRIMA (true && (!var1 || var2)) && !var3
+
+FIM
+```
+<details>
+  <summary>Clique aqui para mostrar o resultado</summary>
+
+Conversão das variáveis no valor booleano:<br>
+
+var1 <- true<br>
+var2 <- false<br>
+var3 <- true<br>
+ 
+Primeiro resolva a questão entre parênteses interno:<br>
+**(True && (!true || false)) && !true**<br>
+**(True && (false || false)) && !true**<br>
+**(True && false) && !true**<br>
+ 
+Agora resolva a questão entre parênteses externo:<br>
+**False && !true**<br>
+
+Por último resolva o operador (!):<br>
+**False && false**<br>
+
+Resultado final:<br>
+**False**
+</details>
+
+### Exercício 4
+```
+INICIO
+VARIAVEIS
+  var1, var2, var3
+
+var1 <- true
+var2 <- false
+var3 <- !var2
+
+IMPRIMA ((5 > 7) && (!var1 || var2)) && var3
+
+FIM
+```
+<details>
+  <summary>Clique aqui para mostrar o resultado</summary>
+
+Conversão das variáveis no valor booleano:<br>
+
+var1 <- true<br>
+var2 <- false<br>
+var3 <- true<br>
+ 
+Primeiro reescreva a expressão lógica substituindo as variáveis:<br>
+**((5 > 7) && (!true || false)) && true**<br>
+ 
+Agora resolva a questão entre parênteses com comparador maior que:<br>
+**((False) && (!true || false)) && true**<br>
+
+Novamente resolva a questão entre parênteses interno que resta:<br>
+**(False && (false || false)) && true**<br>
+**(False && False) && true**<br>
+
+Resolva a questão entre parênteses "externo":<br>
+**False && true**<br>
 
 Resultado final:<br>
 **False**
