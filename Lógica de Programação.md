@@ -458,19 +458,33 @@ FIM
 ```
 ## Estrutura Condicionais
 Será utilizado fluxograma que são representados por quadrado e losango. Cada passo será representado por quadrado e cada tomada de decisão será representado por losango. 
-- Condicional Simples
-- Condicional Composta
-- Condicional Aninhada
-- Escolha Caso
-- **Exemplificação de fluxograma com base na nota da prova de um aluno:** <br>
-[Clique aqui para visualizar o fluxograma](https://ibb.co/C3vMrRkX)
+- Condicional Simples:  executa uma ação somente se uma condição for verdadeira.
+  - Exemplo: Se nota ≥ 5, então Aprovado.
+- Condicional Composta: executa uma ação se a condição for verdadeira, e outra se for falsa.
+  - Exemplo: Se nota ≥ 5, então Aprovado; senão, Reprovado.
+- Condicional Aninhada: uma condicional dentro de uma condicional; como um ninho mesmo! 
+- Escolha Caso: permite executar diferentes blocos de código com base em vários valores possíveis de uma variável. É usada quando há múltiplas alternativas específicas a serem tratadas.
+   Exemplo em pseudocódigo:
+```
+Escolha nota:
+  Caso 10:
+    Mostrar "Excelente!"
+  Caso 7:
+    Mostrar "Bom!"
+  Caso 5:
+    Mostrar "Na média."
+  Outro:
+    Mostrar "Precisa melhorar."
+```
+- **Exemplificação de fluxograma 1:** <br>
+[Clique aqui para visualizar o fluxograma](https://ibb.co/Gfx3KjDW)
 
 ```
 INICIO
 VARIAVEIS
   notaFinal
 
-notaFinal <- Escreva "Qual foi a sua nota?"
+notaFinal <- ESCREVA "Qual foi a sua nota?"
 
 SE notaFinal >= 5 ENTAO
   IMPRIMA "Foi aprovado, parabens!"
@@ -480,5 +494,47 @@ FIMSE
 
 FIM
 ```
-*Obs: o comando FIMSE é utilizado para determinar o fim do bloco "SE".*
+*Obs: o comando FIMSE é utilizado para determinar o fim do bloco "SE".*<br>
 *Obs²: IDENTAÇÃO - Algumas linguagens não funcionam sem a identação adequada! É importante na organização do seu código.*
+- **Exemplificação de fluxograma 2** <br>
+[Clique aqui para visualizar o fluxograma](https://ibb.co/GYq1zxh)
+```
+INICIO
+VARIAVEIS
+  notaFinal
+
+notaFinal <- ESCREVA "Qual foi a sua nota?"
+
+SE notaFinal >= 5 ENTAO
+  IMPRIMA "Foi aprovado, parabens!"
+SENAO
+  SE novaFinal >= 3 ENTAO
+    IMPRIMA "Você está de recuperação"
+  SENAO
+    IMPRIMA "Reprovado!"
+  FIMSE
+FIMSE
+
+FIM
+```
+- **Exemplo de como usar o escolha caso** <br>
+```
+INICIO
+VARIAVEIS
+  notaFinal
+
+notaFinal <- ESCREVA "Qual foi a sua nota?"
+
+ESCOLHA notaFinal
+  CASO 0
+    IMPRIMA "Estou aqui caso precise de ajuda"
+  CASO 5
+    IMPRIMA "Essa foi por pouco"
+  CASO 10
+    IMPRIMA "Aluno exemplar!"
+  OUTROCASO
+    IMPRIMA "Nada a declarar"
+FIMESCOLHA
+
+FIM
+```
