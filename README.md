@@ -413,3 +413,46 @@ quantidadeDeAlunos <- COMPRIMENTO(listaDeAlunos)
 
 FIM
 ```
+- Comprimento vs. Indice:
+  - Comprimento: conta a quantidade de itens
+  - Índice: começa a ser contado a partir do zero, não do um. Por isso, sempre é menor que o comprimento.<br>
+Para acessar o último elemento da lista faça da seguinte forma:
+```
+INICIO
+VARIAVEIS
+  listaDeAlunos, ultimoAlunos
+
+listaDeAlunos <- ["Alex", "Alice", "Bruna", "Caio", "Eduador", "Eloisa"]
+
+ultimoAluno <- listaDeAlunos[COMPRIMENTO(listaDeAlunos) - 1]
+
+FIM
+```
+- Para alterar a quandidade de itens de uma lista utilize a fórmula:
+  - Adição: ADICIONA(nomeDoArray, item)
+  - Remoção: REMOVA(nomeDoArray, indiceDoElemento)
+- **Exemplo de adição:**
+```
+INICIO
+VARIAVEIS
+  listaDeAlunos, ultimoAlunos
+
+listaDeAlunos <- ["Alex", "Alice", "Bruna", "Caio", "Eduador", "Eloisa"]
+
+ADICIONA(listaDeAlunos, Gabriela)
+
+FIM
+```
+&nbsp;&nbsp;&nbsp;&nbsp;*Obs: a Gabriela será adicionada no final da lista*
+- **Exemplo de remoção:**
+```
+INICIO
+VARIAVEIS
+  listaDeAlunos, ultimoAlunos
+
+listaDeAlunos <- ["Alex", "Alice", "Bruna", "Caio", "Eduador", "Eloisa"]
+
+REMOVA(listaDeAlunos, 4)
+
+FIM
+```
