@@ -476,7 +476,7 @@ Escolha nota:
   Outro:
     Mostrar "Precisa melhorar."
 ```
-- **Exemplificação de fluxograma 1:** <br>
+- **Exemplificação de fluxograma 1 - Condicional Simples e Composta :** <br>
 [Clique aqui para visualizar o fluxograma](https://ibb.co/Gfx3KjDW)
 
 ```
@@ -496,7 +496,7 @@ FIM
 ```
 *Obs: o comando FIMSE é utilizado para determinar o fim do bloco "SE".*<br>
 *Obs²: IDENTAÇÃO - Algumas linguagens não funcionam sem a identação adequada! É importante na organização do seu código.*
-- **Exemplificação de fluxograma 2** <br>
+- **Exemplificação de fluxograma 2 - Condicional Aninhada** <br>
 [Clique aqui para visualizar o fluxograma](https://ibb.co/GYq1zxh)
 ```
 INICIO
