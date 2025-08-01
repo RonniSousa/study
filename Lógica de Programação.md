@@ -199,7 +199,7 @@ IMPRIMA true && false && true
 
 FIM
 ```
-&nbsp;&nbsp;&nbsp;&nbsp;*Obs: nesse quarto caso, o computador vai comparar 2 booleanos de cada vez. A primeira operação é true && false = false. A segunda operação é o resultado da primeira mais true, ou seja, false && true = false*<br>
+*Obs: nesse quarto caso, o computador vai comparar 2 booleanos de cada vez. A primeira operação é true && false = false. A segunda operação é o resultado da primeira mais true, ou seja, false && true = false*<br>
 &nbsp;&nbsp;&nbsp;&nbsp;**Resultado do exemplo acima:**
 ```
 True
