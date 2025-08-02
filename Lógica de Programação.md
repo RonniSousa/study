@@ -538,3 +538,21 @@ FIMESCOLHA
 
 FIM
 ```
+## Estrutura de Repetição
+Conhecida como laços ou loops. Permite que um bloco de passos seja executado várias vezes. 
+- Enquanto: enquanto uma condição for verdadeira, repita uma ação
+```
+INICIO
+VARIAVEIS
+  temPratos
+
+temPratos <- "Sim"
+
+ENQUANTO temPratos === "Sim" FACA
+  IMPRIMA "Lavei um prato"
+
+  temPratos <- ESCREVA "Tem mais pratos na pia Sim/Não"
+FIMENQUANTO
+
+FIM
+```
