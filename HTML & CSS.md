@@ -1,8 +1,8 @@
-# ESTRUTURA
+# ESTRUTURAS
 - TAG
 ```
 <a href="https://google.com">Google</a>
 ```
 <p align="center">
-  <img src="https://github.com/RonniSousa/study/blob/main/tag" alt="Diagrama de tag HTML" width="500">
+  <img src="https://raw.githubusercontent.com/RonniSousa/imagens/main/tag.png" alt="Diagrama de tag HTML" width="700">
 </p>
